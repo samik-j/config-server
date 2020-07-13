@@ -1,0 +1,8 @@
+---
+applications:
+  - name: config-server-joanna
+    path: target\config-server-0.0.1-SNAPSHOT.jar
+    env:
+      spring.profiles.active: cloud
+    services:
+      - eureka-service-joanna
